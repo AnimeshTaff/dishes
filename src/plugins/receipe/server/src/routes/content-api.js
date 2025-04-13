@@ -9,4 +9,16 @@ export default [
       policies: [],
     },
   },
+
+  {
+    method: 'GET',
+    path: '/test',
+    // name of the controller file & the method.
+    handler: 'test.test',
+    auth: false,
+    config: {
+      policies: [],
+    },
+  },
+
 ];
