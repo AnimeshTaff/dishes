@@ -1,5 +1,10 @@
-import service from './service';
+const recipe = require('./src/content-types/recipe');
 
-export default {
-  service,
+module.exports = {
+  contentTypes: {
+    recipe,
+  },
+  controllers: require('./src/controllers/recipe'),
+  services: require('./src/services/recipe'),
+  routes: require('./src/routes/recipe'),
 };
