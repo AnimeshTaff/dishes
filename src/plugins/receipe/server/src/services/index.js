@@ -1,10 +1,11 @@
-const recipe = require('./src/content-types/recipe');
+const recipe = require('./recipe');
+const test = require('./test');
+const service = require('./service');
 
 module.exports = {
   contentTypes: {
     recipe,
+    test,
+    service,
   },
-  controllers: require('./src/controllers/recipe'),
-  services: require('./src/services/recipe'),
-  routes: require('./src/routes/recipe'),
 };
